@@ -1,4 +1,4 @@
-<?php /* HISTORY $Id: index.php,v 1.2 2003/10/29 19:48:24 bret Exp $ */
+<?php /* HISTORY $Id: index.php,v 1.1.1.1 2003/12/04 17:54:58 iexposure Exp $ */
 ##
 ## Reports module
 ## (c) Copyright 2003
@@ -131,7 +131,7 @@ if (isset( $_POST['do_payroll_report'])) { // payroll report!!
 	}
 	
 	// all good, prepare for take-off.
-	require( $AppUI->getConfig( 'root_dir' )."/modules/reports/payroll.php" );
+	require( dPgetConfig( 'root_dir' )."/modules/reports/payroll.php" );
 }
 if (isset( $_POST['do_billing_report'])) { // billing report!!
 	// check for hackers first
@@ -143,7 +143,7 @@ if (isset( $_POST['do_billing_report'])) { // billing report!!
 	}
 	
 	// all good, prepare for take-off.
-	require( $AppUI->getConfig( 'root_dir' )."/modules/reports/billing.php" );
+	require( dPgetConfig( 'root_dir' )."/modules/reports/billing.php" );
 }
 
 

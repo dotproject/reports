@@ -1,5 +1,5 @@
 <?php 
-require_once $AppUI->getConfig( 'root_dir' ).'/modules/ticketsmith/common.inc.php';
+require_once dPgetConfig( 'root_dir' ).'/modules/ticketsmith/common.inc.php';
 
 
 // may need so more thought as to which company to pull.  (maybe just search for 'internal' type companies)
